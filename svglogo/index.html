@@ -1,0 +1,64 @@
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+
+        .component {
+            width: 100%;
+            height: auto;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: #F8F9FA;
+            border-radius: 10px;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+            transition: box-shadow 0.3s ease-in-out;
+        }
+
+    </style>
+</head>
+<body>
+
+    <div class="component">
+    <svg viewBox="0 0 300 100" xmlns="http://www.w3.org/2000/svg">
+        <!-- Wave Background -->
+        <defs>
+          <linearGradient id="wave-gradient" x1="0%" y1="0%" x2="100%" y2="0%">
+            <stop offset="0%" style="stop-color:#FF6B6B"/>
+            <stop offset="50%" style="stop-color:#4ECDC4"/>
+            <stop offset="100%" style="stop-color:#45B7D1"/>
+          </linearGradient>
+        </defs>
+        
+        <!-- Logo Wave Shape -->
+        <path d="M40,50 
+                 Q60,20 80,50 
+                 T120,50 
+                 T160,50
+                 T200,50" 
+              fill="none" 
+              stroke="url(#wave-gradient)" 
+              stroke-width="12" 
+              stroke-linecap="round"/>
+        
+        <!-- Text -->
+        <text x="60" y="90" 
+              font-family="Arial, sans-serif" 
+              font-size="14" 
+              font-weight="bold">
+          COLOR GEN
+        </text>
+        
+        <!-- Dot accent -->
+        <circle cx="40" cy="50" r="6" fill="#FF6B6B"/>
+      </svg>
+    </div>
+</body>
+</html>
